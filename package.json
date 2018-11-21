@@ -1,6 +1,6 @@
 {
   "name": "kodebase",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "basal express kodebase med mysql og moduler",
   "main": "index.js",
   "scripts": {
