@@ -20,4 +20,3 @@ app.listen(port, () => {
 ## Maintainers
 * Brian
 * Torben
-* Rasmus Lehrdorff
