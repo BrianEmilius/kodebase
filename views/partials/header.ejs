@@ -1,0 +1,69 @@
+<% include ./head %>
+<nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+	<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/admin">Firmanavn</a>
+	<input class="form-control form-control-dark w-100" type="text" placeholder="Søg" aria-label="Search">
+	<ul class="navbar-nav px-3">
+		<li class="nav-item text-nowrap">
+			<a class="nav-link" href="login.html">Log ud</a>
+		</li>
+	</ul>
+</nav>
+
+<div class="container-fluid">
+	<div class="row">
+		<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+			<div class="sidebar-sticky">
+				<ul class="nav flex-column">
+					<li class="nav-item">
+						<a class="nav-link active" href="index.html">
+							<span data-feather="home"></span>
+							Admin-panel <span class="sr-only">(aktiv side)</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pages.html">
+							<span data-feather="file"></span>
+							Sider
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="products.html">
+							<span data-feather="shopping-cart"></span>
+							Produkter
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="users.html">
+							<span data-feather="users"></span>
+							Brugere
+						</a>
+					</li>
+				</ul>
+
+				<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+					<span>Andet</span>
+				</h6>
+				<ul class="nav flex-column mb-2">
+					<li class="nav-item">
+						<a class="nav-link" href="categories.html">
+							<span data-feather="file-text"></span>
+							Kategorier
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="brands.html">
+							<span data-feather="file-text"></span>
+							Producenter
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="siteinfo.html">
+							<span data-feather="file-text"></span>
+							Site-information
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
