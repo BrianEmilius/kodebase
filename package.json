@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/BrianEmilius/kodebase#readme",
   "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
     "bcrypt": "^3.0.2",
     "dotenv": "^6.1.0",
     "ejs": "^2.6.1",
@@ -29,6 +30,7 @@
     "express-formidable": "^1.2.0",
     "express-log-errors": "^2.0.1",
     "express-session": "^1.15.6",
+    "jsonwebtoken": "^8.4.0",
     "morgan": "^1.9.1",
     "mysql": "^2.16.0"
   },
