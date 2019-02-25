@@ -9,7 +9,8 @@
     "dev:win32": "set DEBUG=kodebase & nodemon -r dotenv/config server.js dotenv_config_path=./.env",
     "dev:linux": "DEBUG=kodebase nodemon -r dotenv/config server.js dotenv_config_path=./.env",
     "dev:darwin": "DEBUG=kodebase nodemon -r dotenv/config server.js dotenv_config_path=./.env",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "node --nolazy --inspect-brk=5858 -r dotenv/config server.js dotenv_config_path=./.env"
   },
   "repository": {
     "type": "git",
