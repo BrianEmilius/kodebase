@@ -8,10 +8,7 @@ module.exports = function (app) {
     app.use(session({
         resave: false,
         saveUninitialized: true,
-        secret: process.env.SESSION_SECRET || 'blowfishsecret',
-        cookie: {
-            maxAge: 60000
-        }
+        secret: process.env.SESSION_SECRET || 'blowfishsecret'
     }));
 
     app.use(flash());

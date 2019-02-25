@@ -1,5 +1,5 @@
-const logErrors = require('express-log-errors');
+const logErrors = require("express-log-errors");
 
-module.exports = function (app) {
-    app.use(logErrors());
+module.exports = function(app) {
+  app.use(logErrors());
 };

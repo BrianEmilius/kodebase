@@ -1,5 +1,5 @@
-const formidable = require('express-formidable');
+const formidable = require("express-formidable");
 
-module.exports = function (app) {
-    app.use(formidable());
+module.exports = function(app) {
+  app.use(formidable());
 };
