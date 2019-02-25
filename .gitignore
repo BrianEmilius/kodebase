@@ -59,3 +59,6 @@ typings/
 
 # next.js build output
 .next
+
+# vscode workspace settings (ignore because they might differ from team-member to team-member)
+.vscode
