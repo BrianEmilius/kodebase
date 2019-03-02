@@ -24,4 +24,9 @@ module.exports = function(app) {
       next(err);
     }
   });
+
+  app.get("/auth/signout", (req, res, next) => {
+    req.session.user = null;
+    res.redirect("/");
+  });
 };
