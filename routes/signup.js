@@ -15,7 +15,7 @@ module.exports = function(app) {
 
   app.post("/signup", async (req, res, next) => {
     try {
-      const salt = await bcrypt.genSalt(10);
+      const salt = await bcrypt.genSalt(15);
       const hash = await bcrypt.hash(req.fields.password, salt);
       const user = await User.create({
         email: req.fields.email,
