@@ -35,7 +35,14 @@ module.exports = function(app) {
       await activationMail.send(req.fields.email);
       res.redirect(`/verify/${user.insertId}`);
     } catch (error) {
-      next(error);
+      if (error.code !== "ER_DUP_ENTRY") return next(error);
+      req.flash(
+        "error",
+        `The email ${
+          req.fields.email
+        } is already registered. Please use another.`
+      );
+      return res.redirect("/signup");
     }
   });
 };
