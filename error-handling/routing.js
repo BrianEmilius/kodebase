@@ -3,7 +3,8 @@ module.exports = function(app) {
     res.status(404);
     res.render("errorpage", {
       title: "404: Not Found",
-      content: "The page you are looking for does not exist."
+      content:
+        "The page you are looking for does not exist. This service is either temporarily unable to process your request or the link you clicked is broken. Please check back shortly."
     });
   });
 
