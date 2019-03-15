@@ -1,10 +1,10 @@
 <% include ./head %>
 <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
 	<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="/">Firmanavn</a>
-	<input class="form-control form-control-dark w-100" type="text" placeholder="Søg" aria-label="Search">
+	<input class="form-control form-control-dark w-100" type="text" placeholder="<%= __('Search') %>" aria-label="<%= __('Search') %>">
 	<ul class="navbar-nav px-3">
 		<li class="nav-item text-nowrap">
-			<a class="nav-link" href="/auth/signout">Log ud</a>
+			<a class="nav-link" href="/auth/signout"><%= __("Sign out") %></a>
 		</li>
 	</ul>
 </nav>
@@ -17,25 +17,25 @@
 					<li class="nav-item">
 						<a class="nav-link active" href="/">
 							<span data-feather="home"></span>
-							Admin-panel <span class="sr-only">(aktiv side)</span>
+							<%= __("Dashboard") %> <span class="sr-only">(<%= __("current page") %>)</span>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="pages.html">
+						<a class="nav-link" href="/pages">
 							<span data-feather="file"></span>
-							Sider
+							<%= __("Pages") %>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="products.html">
+						<a class="nav-link" href="/products">
 							<span data-feather="shopping-cart"></span>
-							Produkter
+							<%= __("Products") %>
 						</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="/users">
 							<span data-feather="users"></span>
-							Brugere
+							<%= __("Users") %>
 						</a>
 					</li>
 				</ul>
